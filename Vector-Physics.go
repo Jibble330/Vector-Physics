@@ -96,6 +96,7 @@ func main() {
     screen.SetStyle(defStyle)
 
     screen.SetContent(0, 0, 'H', nil, defStyle)
+    screen.Show()
     
     time.Sleep(time.Second*5)
 }
