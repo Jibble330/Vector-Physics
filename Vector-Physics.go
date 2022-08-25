@@ -90,6 +90,7 @@ func main() {
     if err = screen.Init(); err != nil {
         log.Fatal(err)
     }
+    defer screen.Fini()
 
     defStyle := tcell.StyleDefault.Background(tcell.ColorBlack).Foreground(tcell.ColorWhite)
     screen.SetStyle(defStyle)
